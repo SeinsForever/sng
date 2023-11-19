@@ -21,6 +21,12 @@ from portal_vikpdur import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('auth', views.api_user_auth),
+    path('mainpage/', views.main_page_view),
+    path('set', views.api_user_auth),
+    path('logout/', views.api_user_logout),
+    path('api_get_data/', views.api_get_data),
+    path('api_get_data_history/', views.api_get_data_history),
+    path('api_set_predict', views.api_set_predict),
+    path('api_get_predict_data', views.api_get_predict_data),
     path('', views.index)
 ]
